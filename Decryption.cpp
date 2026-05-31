@@ -97,11 +97,11 @@ bitset<48> generateSubkey(const bitset<64>& key) {
 int main() {
     string s;
     cout << "DES Single Round DECRYPTION " << endl;
-    cout << "Enter ciphertext as hex: ";
+    cout << "Enter ciphertext (max 16 hex digits) : ";
     cin >> s;
     bitset<64> ciphertext(stoull(s, nullptr, 16));
 
-    cout << "Enter key  as hex: ";
+    cout << "Enter key        (max 16 hex digits) : ";
     cin >> s;
     bitset<64> key(stoull(s, nullptr, 16));
 
